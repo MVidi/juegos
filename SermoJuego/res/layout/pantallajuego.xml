@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textoEntrePunt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="VS"
+            android:textSize="50sp" />
+
+        <TextView
+            android:id="@+id/puntuacion1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textoEntrePunt"
+            android:layout_alignBottom="@+id/textoEntrePunt"
+            android:layout_alignParentLeft="true"
+            android:text="PUNT1"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/puntuacion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textoEntrePunt"
+            android:layout_alignParentRight="true"
+            android:gravity="right"
+            android:text="PUNT2"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/preguntaPJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="¿Qué significa &quot;RED&quot;?"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" >
+
+        <Button
+            android:id="@+id/respuesta8PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="17dp"
+            android:text="Última" />
+
+        <Button
+            android:id="@+id/respuesta3PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/respuesta8PJ"
+            android:layout_alignBottom="@+id/respuesta8PJ"
+            android:layout_alignParentRight="true"
+            android:text="Juan" />
+
+        <Button
+            android:id="@+id/respuesta6PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/respuesta8PJ"
+            android:text="Practiquil" />
+
+        <Button
+            android:id="@+id/respuesta5PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/respuesta3PJ"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/respuesta2PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/respuesta5PJ"
+            android:text="Rosa Oscuro" />
+
+        <Button
+            android:id="@+id/respuesta1PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/respuesta7PJ"
+            android:text="Colorado" />
+
+        <Button
+            android:id="@+id/respuesta7PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/respuesta6PJ"
+            android:text="Huevo Frito" />
+
+        <Button
+            android:id="@+id/respuesta4PJ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/respuesta2PJ"
+            android:text="Batiburrillo" />
+
+    </RelativeLayout>
+
+</LinearLayout>

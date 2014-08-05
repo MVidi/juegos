@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pantallaInicioActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TextView
+        android:id="@+id/puntuacion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="@string/juego"
+        android:textSize="50sp" />
+
+    <EditText
+        android:id="@+id/contrasenaPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/usuarioPI"
+        android:layout_below="@+id/usuarioPI"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:text="@string/Contrasena" />
+
+    <EditText
+        android:id="@+id/usuarioPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/puntuacion1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/Usuario" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/aceptarPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/contrasenaPI"
+        android:onClick="aceptarPulsado"
+        android:text="@string/Aceptar" />
+
+    <Button
+        android:id="@+id/nuevoUsuarioPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aceptarPI"
+        android:layout_centerHorizontal="true"
+        android:text="@string/nuevoUsuario" />
+
+    <Button
+        android:id="@+id/invitadoPI"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+  		android:layout_centerHorizontal="true"
+        android:layout_below="@+id/nuevoUsuarioPI"
+        android:text="@string/Invitado" />
+   
+</RelativeLayout>

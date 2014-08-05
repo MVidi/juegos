@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   
+    <string name="app_name">Juego</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="juego">¡ JUEGO !</string>
+    <string name="action_settings">Settings</string>
+  	<string name="Usuario">Nombre de usuario</string>
+  	<string name="Contrasena">Contraseña</string>
+  	<string name="Aceptar">Aceptar</string>
+  	<string name="Invitado">Invitado</string>
+  	<string name="nuevoUsuario">Nuevo Usuario</string>
+  	<string name="jugar">jugar</string>
+  	<string name="amigos">Amigos</string>
+  	<string name="configurar">Configuración</string>
+  	<string name="tipopartida">Seleccione tipo de partida</string>
+  	<string name="sobra">este sobra</string>
+</resources>
