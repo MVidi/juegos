@@ -1,5 +1,9 @@
 package com.example.sermo2;
 
+import java.net.UnknownHostException;
+import java.util.List;
+import java.util.Set;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -12,7 +16,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 import android.os.Build;
+
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
 
 public class PantallaPrimeraActivity extends ActionBarActivity {
 
@@ -66,6 +74,36 @@ public class PantallaPrimeraActivity extends ActionBarActivity {
 		Intent i= new Intent (this.getApplicationContext(),PantallaMenuActivity.class);
 		startActivity(i);
 		finish();
+	}
+	public void conectarMongo(View view){
+		String S;
+		MongoClient mongo = null;
+        try {
+            mongo = new MongoClient("ds061199.mongolab.com", 61199);
+            
+           
+           
+           
+           
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+        }
+     
+ 
+        if (mongo != null) {
+           S= "encontrado";
+          
+        } else {
+            S="no encontrado";
+        }
+		Toast.makeText(view.getContext(), S, Toast.LENGTH_SHORT).show();
+		
+		DB db = mongo.getDB("sermo");
+        boolean auth = db.authenticate("mvidi", "quejigal".toCharArray());
+         
+        Set<String> colecciones = db.getCollectionNames();
+        Toast.makeText(view.getContext(), Integer.toString(colecciones.size()), Toast.LENGTH_SHORT).show();
+		
 	}
 	/**
 	 * A placeholder fragment containing a simple view.

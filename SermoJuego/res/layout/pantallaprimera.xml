@@ -64,6 +64,7 @@
         android:layout_height="wrap_content"
   		android:layout_centerHorizontal="true"
         android:layout_below="@+id/nuevoUsuarioPI"
-        android:text="@string/Invitado" />
+        android:text="@string/Invitado"
+    	android:onClick="conectarMongo" />
    
 </RelativeLayout>
