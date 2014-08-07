@@ -75,20 +75,6 @@ public class PantallaPrimeraActivity extends ActionBarActivity {
 		startActivity(i);
 		finish();
 	}
-	
-	
-	public void clicarContrasena(View view){      
-	      if(view.getId()==R.id.contrasenaPI);
-	           mContrasena.setText("");    
-	}
-	
-	public void clicarUsuario(View view){      
-	      if(view.getId()==R.id.usuarioPI);
-	           mUsuario.setText("");    
-	}
-	/* conectar a mongo
-	 * 
-	 * 
 	public void conectarMongo(View view){
 		String S;
 		MongoClient mongo = null;
@@ -118,7 +104,7 @@ public class PantallaPrimeraActivity extends ActionBarActivity {
         Set<String> colecciones = db.getCollectionNames();
         Toast.makeText(view.getContext(), Integer.toString(colecciones.size()), Toast.LENGTH_SHORT).show();
 		
-	}*/
+	}
 	/**
 	 * A placeholder fragment containing a simple view.
 	 */

@@ -81,11 +81,6 @@ public class PantallaPrimeraActivity extends ActionBarActivity {
 	      if(view.getId()==R.id.contrasenaPI);
 	           mContrasena.setText("");    
 	}
-	
-	public void clicarUsuario(View view){      
-	      if(view.getId()==R.id.usuarioPI);
-	           mUsuario.setText("");    
-	}
 	/* conectar a mongo
 	 * 
 	 * 
