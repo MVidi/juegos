@@ -23,7 +23,7 @@ import com.mongodb.DB;
 import com.mongodb.MongoClient;
 
 public class PantallaPrimeraActivity extends ActionBarActivity {
-// borrar esta linea si esta al subirse a git
+
 	Button mAceptar;
 	Button mInvitado;
 	Button mNuevoUsuario;
