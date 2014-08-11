@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fb="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/configurarPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/amigosPM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/configurar" />
+
+    <Button
+        android:id="@+id/amigosPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tipopartidaPM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="@string/amigos" />
+
+    <Button
+        android:id="@+id/tipopartidaPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jugarPM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/tipopartida" />
+
+    <Button
+        android:id="@+id/jugarPM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="38dp"
+        android:onClick="empezarJuego"
+        android:text="@string/jugar" />
+
+    <com.facebook.widget.ProfilePictureView
+        android:id="@+id/profilePictureView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/amigosPM" >
+    </com.facebook.widget.ProfilePictureView>
+
+    <com.facebook.widget.LoginButton
+        android:id="@+id/loginButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/configurarPM"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="@string/registrate"
+   		fb:login_text="@string/tegistrate"
+    	fb:logout_text="Connecting with facebook" />
+
+</RelativeLayout>

@@ -8,4 +8,6 @@
 <fullyQualifiedTypeName name="com.mongodb.DB"/>
 <fullyQualifiedTypeName name="java.util.Set"/>
 <fullyQualifiedTypeName name="android.R"/>
+<fullyQualifiedTypeName name="com.facebook.widget.LoginButton"/>
+<fullyQualifiedTypeName name="com.example.sermo2.R.id"/>
 </qualifiedTypeNameHistroy>

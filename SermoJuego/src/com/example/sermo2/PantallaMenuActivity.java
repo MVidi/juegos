@@ -1,5 +1,10 @@
 package com.example.sermo2;
 
+import com.facebook.Session;
+import com.facebook.SessionState;
+import com.facebook.UiLifecycleHelper;
+import com.facebook.widget.LoginButton;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -20,16 +25,19 @@ public class PantallaMenuActivity  extends ActionBarActivity {
 	Button mTipoPartida;
 	Button mAmigos;
 	Button mConfigurar;
+	LoginButton mloginButton1;
+
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.pantallamenu);
 		iniciar();
+		
 		if (savedInstanceState == null) {
 		}
 	}
-
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 
@@ -57,6 +65,7 @@ public class PantallaMenuActivity  extends ActionBarActivity {
 		this.mJugar= (Button)findViewById(R.id.jugarPM);
 		this.mAmigos= (Button)findViewById(R.id.amigosPM);
 		this.mTipoPartida= (Button)findViewById(R.id.tipopartidaPM);
+		this.mloginButton1= (LoginButton)findViewById(R.id.loginButton1);
 		
 		
 	}

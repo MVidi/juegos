@@ -14,4 +14,6 @@
   	<string name="amigos">Amigos</string>
   	<string name="configurar">Configuración</string>
   	<string name="tipopartida">Seleccione tipo de partida</string>
+  	<string name="registrate">Usa tu usuario de facebook</string>
+  	 <string name="app_id">1478201349095394</string>
 </resources>

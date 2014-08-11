@@ -23,7 +23,7 @@ import com.mongodb.DB;
 import com.mongodb.MongoClient;
 
 public class PantallaPrimeraActivity extends ActionBarActivity {
-// borrar esta linea si esta al subirse a git
+
 	Button mAceptar;
 	Button mInvitado;
 	Button mNuevoUsuario;
@@ -86,6 +86,20 @@ public class PantallaPrimeraActivity extends ActionBarActivity {
 	      if(view.getId()==R.id.usuarioPI);
 	           mUsuario.setText("");    
 	}
+	/* conectar a facebook
+	 * 
+	 * 
+	public View onCreateView(LayoutInflater inflater, 
+	        ViewGroup container, 
+	        Bundle savedInstanceState) {
+	    View view = inflater.inflate(R.layout.pantallaprimera, container, false);
+
+	    return view;
+	}
+	*/
+	
+	
+	
 	/* conectar a mongo
 	 * 
 	 * 
